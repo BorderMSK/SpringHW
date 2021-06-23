@@ -21,7 +21,7 @@
                                 <rect key="frame" x="82" y="195" width="250" height="250"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ap3-Bd-EoA" customClass="SpringLabel" customModule="Spring">
-                                        <rect key="frame" x="2" y="46" width="240" height="120"/>
+                                        <rect key="frame" x="8" y="65" width="234" height="120"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -30,10 +30,10 @@
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
                                     <constraint firstItem="ap3-Bd-EoA" firstAttribute="trailing" secondItem="Uc8-uG-WjB" secondAttribute="trailingMargin" id="4oT-nV-c3y"/>
-                                    <constraint firstAttribute="bottom" secondItem="ap3-Bd-EoA" secondAttribute="bottom" constant="84" id="AbR-71-ldQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="ap3-Bd-EoA" secondAttribute="bottom" constant="65" id="AbR-71-ldQ"/>
                                     <constraint firstAttribute="width" constant="250" id="FrY-Yq-pg7"/>
-                                    <constraint firstItem="ap3-Bd-EoA" firstAttribute="leading" secondItem="Uc8-uG-WjB" secondAttribute="leading" constant="2" id="Nnl-4n-eWy"/>
-                                    <constraint firstItem="ap3-Bd-EoA" firstAttribute="top" secondItem="Uc8-uG-WjB" secondAttribute="top" constant="46" id="sez-c9-CoR"/>
+                                    <constraint firstItem="ap3-Bd-EoA" firstAttribute="leading" secondItem="Uc8-uG-WjB" secondAttribute="leading" constant="8" id="Nnl-4n-eWy"/>
+                                    <constraint firstItem="ap3-Bd-EoA" firstAttribute="top" secondItem="Uc8-uG-WjB" secondAttribute="top" constant="65" id="sez-c9-CoR"/>
                                     <constraint firstAttribute="height" constant="250" id="whT-ga-dFa"/>
                                 </constraints>
                             </view>
