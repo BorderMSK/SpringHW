@@ -76,17 +76,57 @@
 		BC85A2402682633D00A032B4 /* SpringHW */ = {
 			isa = PBXGroup;
 			children = (
-				BC85A2412682633D00A032B4 /* AppDelegate.swift */,
-				BC85A2432682633D00A032B4 /* SceneDelegate.swift */,
-				BC85A25526826D6F00A032B4 /* Data.swift */,
-				BC85A2452682633D00A032B4 /* ViewController.swift */,
-				BC85A2472682633D00A032B4 /* Main.storyboard */,
-				BC85A24A2682634100A032B4 /* Assets.xcassets */,
-				BC85A24C2682634100A032B4 /* LaunchScreen.storyboard */,
 				BC85A24F2682634100A032B4 /* Info.plist */,
-				BC85A2592682A8A400A032B4 /* Model.swift */,
+				BC85A25F2682D12B00A032B4 /* Extensions */,
+				BC85A25E2682D10800A032B4 /* Storyboards */,
+				BC85A25D2682D0F400A032B4 /* ViewController */,
+				BC85A25C2682D0E700A032B4 /* Data */,
+				BC85A25B2682D0DA00A032B4 /* Model */,
 			);
 			path = SpringHW;
+			sourceTree = "<group>";
+		};
+		BC85A25B2682D0DA00A032B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC85A2592682A8A400A032B4 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC85A25C2682D0E700A032B4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BC85A25526826D6F00A032B4 /* Data.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BC85A25D2682D0F400A032B4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BC85A2452682633D00A032B4 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BC85A25E2682D10800A032B4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BC85A2472682633D00A032B4 /* Main.storyboard */,
+				BC85A24C2682634100A032B4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BC85A25F2682D12B00A032B4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC85A2412682633D00A032B4 /* AppDelegate.swift */,
+				BC85A2432682633D00A032B4 /* SceneDelegate.swift */,
+				BC85A24A2682634100A032B4 /* Assets.xcassets */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C91458520BF3769A3D81FE41 /* Frameworks */ = {
