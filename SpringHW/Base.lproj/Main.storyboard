@@ -1,24 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpringHW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uc8-uG-WjB" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="82" y="195" width="250" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ap3-Bd-EoA" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="2" y="46" width="240" height="120"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstItem="ap3-Bd-EoA" firstAttribute="trailing" secondItem="Uc8-uG-WjB" secondAttribute="trailingMargin" id="4oT-nV-c3y"/>
+                                    <constraint firstAttribute="bottom" secondItem="ap3-Bd-EoA" secondAttribute="bottom" constant="84" id="AbR-71-ldQ"/>
+                                    <constraint firstAttribute="width" constant="250" id="FrY-Yq-pg7"/>
+                                    <constraint firstItem="ap3-Bd-EoA" firstAttribute="leading" secondItem="Uc8-uG-WjB" secondAttribute="leading" constant="2" id="Nnl-4n-eWy"/>
+                                    <constraint firstItem="ap3-Bd-EoA" firstAttribute="top" secondItem="Uc8-uG-WjB" secondAttribute="top" constant="46" id="sez-c9-CoR"/>
+                                    <constraint firstAttribute="height" constant="250" id="whT-ga-dFa"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7te-b1-yOf" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="82" y="672" width="250" height="50"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="3JI-zM-vwE"/>
+                                    <constraint firstAttribute="height" constant="50" id="ErA-wr-4bL"/>
+                                </constraints>
+                                <state key="normal" title="Run Animation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kw8-eT-W6y"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7te-b1-yOf" secondAttribute="bottom" constant="140" id="Jy0-4t-aa6"/>
+                            <constraint firstItem="7te-b1-yOf" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="Mpq-c6-e6w"/>
+                            <constraint firstItem="Uc8-uG-WjB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="151" id="SCx-L4-GHz"/>
+                            <constraint firstItem="Uc8-uG-WjB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="chQ-NL-edz"/>
+                            <constraint firstItem="7te-b1-yOf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kvD-b9-r8b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="7te-b1-yOf" secondAttribute="trailing" constant="82" id="yBQ-sY-ZNI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animationButton" destination="7te-b1-yOf" id="DnG-cQ-EXk"/>
+                        <outlet property="animationLabel" destination="ap3-Bd-EoA" id="Sq0-B0-Zx2"/>
+                        <outlet property="viewAnimation" destination="Uc8-uG-WjB" id="wFg-Ei-QLv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
