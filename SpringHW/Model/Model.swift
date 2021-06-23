@@ -36,7 +36,10 @@ extension Animation{
         let randomDuration = Double.random(in: 0...4)
         
         for index in 0..<counts{
-            let animationsRandom = Animation(animation: animations[index].rawValue, curve: curves[index].rawValue, force: randomForces, duration: randomDuration)
+            let animationsRandom = Animation(animation: animations[index].rawValue,
+                                             curve: curves[index].rawValue,
+                                             force: randomForces,
+                                             duration: randomDuration)
             
             randomAnimations.append(animationsRandom)
         }
