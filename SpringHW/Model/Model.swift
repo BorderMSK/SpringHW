@@ -26,20 +26,22 @@ struct Animation {
 extension Animation{
     
     static func getAnimations() -> [Animation]{
+        
         var randomAnimations = [Animation]()
         
         let animations = Data.randomAnimation.animations.shuffled()
         let curves = Data.randomAnimation.curves.shuffled()
         
         let counts = min(animations.count, curves.count)
+        
         let randomForces = Double.random(in: 0...5)
-        let randomDuration = Double.random(in: 0...4)
+        let randomDurations = Double.random(in: 0...4)
         
         for index in 0..<counts{
             let animationsRandom = Animation(animation: animations[index].rawValue,
                                              curve: curves[index].rawValue,
                                              force: randomForces,
-                                             duration: randomDuration)
+                                             duration: randomDurations)
             
             randomAnimations.append(animationsRandom)
         }
