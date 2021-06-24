@@ -27,7 +27,7 @@ extension Animation{
     
     static func getAnimations() -> [Animation]{
         
-        var randomAnimations = [Animation]()
+        var randomAnimations: [Animation] = []
         
         let animations = Data.randomAnimation.animations.shuffled()
         let curves = Data.randomAnimation.curves.shuffled()
